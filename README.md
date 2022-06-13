@@ -1,5 +1,10 @@
 # Proyecto018
 
+![imagen](https://user-images.githubusercontent.com/9555509/173451106-fc155fde-e990-4666-8d6a-4db1faf8c57b.png)
+
+![imagen](https://user-images.githubusercontent.com/9555509/173451129-618d1ca4-7448-49c4-9088-ba41bfb97a2b.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 ## Development server
