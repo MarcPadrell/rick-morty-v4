@@ -1,17 +1,32 @@
-<div>
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <a href="#" class="navbar-brand">Freaky Jolly</a>
-        <div class="navbar-nav mr-auto">
-            <li class="nav-item" routerLink="books" routerLinkActive="active">
-                <a href="/books" class="nav-link">List of Books</a>
-            </li>
-            <li class="nav-item" routerLink="add" routerLinkActive="active">
-                <a href="/add" class="nav-link">Add a Book</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+        <div class="offcanvas-body pe-5">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/characters">List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/add">Add</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container mt-5">
-        <router-outlet></router-outlet>
+        <div class="offcanvas offcanvas-end text-white bg-dark p" tabindex="-1" id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+        </div>
     </div>
-</div>
+</nav>
+
+<router-outlet></router-outlet>
